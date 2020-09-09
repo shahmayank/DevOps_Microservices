@@ -1,0 +1,27 @@
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 284-629-753
+[2020-09-09 08:56:01,340] INFO in app: JSON payload:
+{json_payload}
+[2020-09-09 08:56:01,342] INFO in app: Inference payload DataFrame:
+{inference_payload}
+[2020-09-09 08:56:01,342] INFO in app: Scaling Payload:
+{payload}
+[2020-09-09 08:56:01,346] INFO in app: Prediction:
+{prediction}
+172.17.0.1 - - [09/Sep/2020 08:56:01] "POST /predict HTTP/1.1" 200 -
+
+
+ubuntu@ip-22-22-0-113:~/DevOps_Microservices/project-ml-microservice-kubernetes$ sudo ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
